@@ -23,7 +23,11 @@ button a{
     text-decoration: none;
     color: white;
 }
-
+.hr{
+    margin-left: 45%;
+    margin-right: 45%;
+    border: 1px solid #E76F51;
+}
 .feature-title{
     color: #E76F51;
 }
@@ -75,9 +79,9 @@ button a{
 }
 .footer{
     background-color: #0B0D17;
-    height: 250px;
+    height: 150px;
     padding-top: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 .footer-menu a{
     text-decoration: none;

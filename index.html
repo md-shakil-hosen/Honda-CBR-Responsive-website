@@ -11,15 +11,18 @@
     <!-------- Bootstrap Stylesheet cdn ---------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Navbar stylesheet Optional Just Use For Navbar -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <!--------------- Google Font ----------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!----------------Font Awsome------------------->
     <script src="https://kit.fontawesome.com/ea5253e049.js" crossorigin="anonymous"></script>
-    <!-- Navba stylesheet Optional -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!---------------- Favicon---------------- -->
+    <link rel="shortcut icon" href="images/motorcycle.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -32,16 +35,16 @@
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse me-5 " id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse me-5" id="navbarNavAltMarkup">
                     <!-- ml-auto still works just fine-->
                     <div class="navbar-nav ms-auto ml-auto mr-5">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">News</a>
-                        <a class="nav-link" href="#">Clients</a>
-                        <a class="nav-link" href="#">FQA</a>
-                        <a class="nav-link" href="#">Gallary</a>
-                        <a class="nav-link" href="#">Shop</a>
-                        <a class="nav-link" href="#">Brand</a>
+                        <a class="nav-link active" aria-current="page" href="#hero-section">Home</a>
+                        <a class="nav-link" href="#latest-news">News</a>
+                        <a class="nav-link" href="#clients-say">Clients</a>
+                        <a class="nav-link" href="#FAQ">FQA</a>
+                        <a class="nav-link" href="#bike-gallary">Gallary</a>
+                        <a class="nav-link" href="#buy-now">Shop</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                         <a class="nav-link px-4" id="log-in-btn" href="#">Log In</a>
                     </div>
                 </div>
@@ -114,7 +117,7 @@
             <div class="container mt-5 mb-5">
                 <h1 class="text-center">Fetured Bikes 2021</h1>
                 <h4 class="text-center feature-title">Best bike collection</h4>
-                <hr>
+                <hr class="hr">
                 <div class="bike">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
@@ -139,8 +142,9 @@
                 </div>
         </section>
         <!-------latest News----->
-        <section id="latest News">
+        <section id="latest-news">
             <h1 class="text-center"><span class="color-text-client">Latest</span> News</h1>
+            <hr class="hr">
             <div class="container">
                 <div class="row d-flex justify-content-around">
                     <div class="card shadow-sm p-3 mb-5 bg-body rounded-3 border-0" style="width: 18rem;">
@@ -182,6 +186,7 @@
         <!-------------- Clients Says Section--------------->
         <section id="clients-say">
             <h1 class="text-center">Happy <span class="color-text-client"> Clients Says</span></h1>
+            <hr class="hr">
             <div class="container mt-5 mb-5 text-center">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
@@ -255,9 +260,10 @@
         <!----------------------Frequently Asked Questions Section----------------->
         <section id="FAQ">
             <h1 class="text-center">Frequently Asked <span class="color-text-client">Questions</span></h1>
+            <hr class="hr">
             <div class="container mb-5 mt-5">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
                         <img src="images/faq.png" width="340px" height="320px" alt="">
                     </div>
                     <div class="col-lg-7 FQA">
@@ -328,6 +334,7 @@
         <!-----------------------Extra Section Upcomming Bike Gallary --------------------->
         <section id="bike-gallary">
             <h1 class="text-center">Upcomming Bike <span class="color-text-client">Gallary</span></h1>
+            <hr class="hr">
             <div class="container mt-5 mb-5">
                 <div class="row">
                     <div class="col-lg-5 mb-3 border border-light border-2">
@@ -380,6 +387,7 @@
         <!-----------------Brand & Buy Section------------------->
         <section id="buy-now">
             <h1 class="text-center">Choose Your Brand & <span class="color-text-client">Buy Now</span></h1>
+            <hr class="hr">
             <div class="container mb-5">
                 <div class="row">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -387,7 +395,7 @@
                             <div class="card h-100">
                                 <img src="images/brand/honda_bikes_logo.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <!-------------------->
+                                    <!---------Modal----------->
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop">
@@ -429,7 +437,7 @@
 
                                                         </div>
                                                     </div>
-                                                    <!-- modal  -->
+                                                    <!----------- Modal End------- -->
 
                                                 </div>
                                                 <div class="modal-footer">
@@ -440,13 +448,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-------------------->
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-12 text-center">
                             <div class="card h-100">
-                                <img src="images/brand/suzuki_bikes_logo.jpg" class="card-img-top" alt="...">
+                                <img src="images/brand/suzuki_bikes_logo.jpg" class="card-img-top img-fluid"
+                                    alt="suzuki">
                                 <div class="card-body">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop">Suzuki</button>
@@ -455,7 +463,8 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-12 text-center">
                             <div class="card h-100">
-                                <img src="images/brand/yamaha_bikes_logo.jpg" class="card-img-top" alt="...">
+                                <img src="images/brand/yamaha_bikes_logo.jpg" class="card-img-top img-fluid"
+                                    alt="Yamaha">
                                 <div class="card-body">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop">Yamaha</button>
@@ -464,7 +473,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-12 text-center">
                             <div class="card h-100">
-                                <img src="images/brand/bajaj_bikes_logo.jpg" class="card-img-top" alt="...">
+                                <img src="images/brand/bajaj_bikes_logo.jpg" class="card-img-top img-fluid" alt="Bajaj">
                                 <div class="card-body">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop">Bajaj</button>
@@ -473,7 +482,8 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-12 text-center">
                             <div class="card h-100">
-                                <img src="images/brand/kawasaki_bikes_logo.jpg" class="card-img-top" alt="...">
+                                <img src="images/brand/kawasaki_bikes_logo.jpg" class="card-img-top img-fluid"
+                                    alt="Kawasaki">
                                 <div class="card-body">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop">Kawasaki</button>
@@ -482,7 +492,8 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-12 text-center">
                             <div class="card h-100">
-                                <img src="images/brand/mahindra_bikes_logo.jpg" class="card-img-top" alt="...">
+                                <img src="images/brand/mahindra_bikes_logo.jpg" class="card-img-top img-fluid"
+                                    alt="Mahindra">
                                 <div class="card-body">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop">Mahindra</button>
@@ -491,7 +502,8 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-12 text-center">
                             <div class="card h-100">
-                                <img src="images/brand/meiduo-bikes-logo.jpg" class="card-img-top" alt="...">
+                                <img src="images/brand/meiduo-bikes-logo.jpg" class="card-img-top img-fluid"
+                                    alt="Meduo">
                                 <div class="card-body">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop">Meduo</button>
@@ -500,7 +512,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-12 text-center">
                             <div class="card h-100">
-                                <img src="images/brand/motrac-logo.jpg" class="card-img-top" alt="...">
+                                <img src="images/brand/motrac-logo.jpg" class="card-img-top img-fluid" alt="Motrac">
                                 <div class="card-body">
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop">Motrac</button>
@@ -511,11 +523,10 @@
                 </div>
             </div>
         </section>
-
     </main>
     <!-- Main Section End -->
     <!-- footer Section Start Hear -->
-    <footer>
+    <footer id="contact">
         <div class=" footer container-fluid mt-5 h-25">
             <div class="container">
                 <div class="row">
