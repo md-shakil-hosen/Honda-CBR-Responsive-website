@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .honda-name{
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
