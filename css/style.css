@@ -1,0 +1,70 @@
+
+.honda-name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+#hero-section{
+    background-color:#264653;
+    width: 100%;
+}
+.purchase-btn{
+    background-color: #E76F51;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.feature-title{
+    color: #E76F51;
+}
+.feature-bike img{
+    filter: grayscale(100%);
+}
+.news-btn{
+    color: white;
+    background-color: #E76F51;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.news-btn-outline{
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #E76F51;
+    color: #E76F51;
+}
+.color-text-client{
+    color: #E76F51;
+}
+.clients-img img{
+  width: 149px;
+  height: 149px;
+  
+}
+.fa-star{
+    color: #E76F51;
+}
+.client-name{
+    color: #23A6F0;
+}
+.footer{
+    background-color: #0B0D17;
+    height: 250px;
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 4px 10px;
+}
